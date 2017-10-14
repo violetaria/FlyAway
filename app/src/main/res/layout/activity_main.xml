@@ -1,69 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.flyaway.app.MainActivity" tools:layout_editor_absoluteY="81dp"
+    tools:context="com.flyaway.app.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fly Away"
+        android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="16dp"/>
+        android:layout_marginRight="40dp"
+        android:id="@+id/tvTitle"
+        android:layout_marginTop="23dp" android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="One Way" tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="54dp" tools:text="Round Trip"/>
+        android:text="One Way"
+        tools:layout_editor_absoluteX="260dp" tools:layout_editor_absoluteY="29dp"
+        tools:text="Round Trip"
+        android:layout_below="@+id/tvTitle" android:layout_alignParentEnd="true"/>
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:text="@string/from"
         android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="94dp"/>
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:layout_below="@+id/tvTitle" android:layout_alignEnd="@+id/editText"
+        android:layout_marginTop="52dp"/>
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:text="@string/to"
         android:textAppearance="@android:style/TextAppearance.Material.Medium"
         tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="94dp"/>
+        tools:layout_editor_absoluteY="94dp"
+        android:layout_above="@+id/actvFrom" android:layout_toStartOf="@+id/switch1"/>
     <EditText
         android:id="@+id/editText"
         android:layout_width="115dp"
         android:layout_height="43dp"
-        android:ems="10"
+        android:layout_marginTop="16dp" android:ems="10"
         android:hint="@string/mm_dd_yy" android:inputType="date"
-        tools:layout_editor_absoluteX="233dp" tools:layout_editor_absoluteY="194dp"/>
+        tools:layout_editor_absoluteX="233dp" tools:layout_editor_absoluteY="194dp"
+        android:layout_below="@+id/actvFrom" android:layout_toStartOf="@+id/tvTitle"/>
     <EditText
         android:id="@+id/editText2"
         android:layout_width="115dp"
         android:layout_height="43dp"
-        android:ems="10"
-        android:hint="@string/mm_dd_yy" android:inputType="date"
-        tools:layout_editor_absoluteX="33dp" tools:layout_editor_absoluteY="194dp"/>
+        android:layout_alignStart="@+id/actvTo" android:layout_below="@+id/actvTo"
+        android:ems="10" android:hint="@string/mm_dd_yy"
+        android:inputType="date" tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="194dp"/>
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:elevation="0dp"
         android:text="@string/search" tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="284dp"/>
+        tools:layout_editor_absoluteY="284dp"
+        android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView"
+        android:id="@+id/actvFrom"
         android:layout_width="115dp"
         android:layout_height="46dp"
-        tools:layout_editor_absoluteX="233dp" tools:layout_editor_absoluteY="134dp"/>
+        tools:layout_editor_absoluteX="233dp" tools:layout_editor_absoluteY="134dp"
+        android:layout_below="@+id/tvFrom" android:layout_toStartOf="@+id/button"/>
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView2"
+        android:id="@+id/actvTo"
         android:layout_width="115dp"
         android:layout_height="46dp"
-        tools:layout_editor_absoluteX="33dp" tools:layout_editor_absoluteY="134dp"/>
+        tools:layout_editor_absoluteX="33dp" tools:layout_editor_absoluteY="134dp"
+        android:layout_below="@+id/tvTo" android:layout_toEndOf="@+id/button"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
