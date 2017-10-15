@@ -7,54 +7,52 @@
     tools:context="com.flyaway.app.FlightList">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="First Name"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/tvTravelInfoText"
         android:layout_alignParentStart="true"
         android:layout_marginTop="19dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvTravelInfoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Traveler Information"
-        tools:textSize="36sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textSize="36sp" tools:textSize="36sp" android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/etMiddleInitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignTop="@+id/etFirstName"
+        android:layout_toRightOf="@+id/etFirstName"
+        android:ems="10" android:inputType="textPersonName"
+        android:text="M.I."/>
+
+    <EditText
+        android:id="@+id/etLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/editText"
-        android:layout_marginStart="195dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="M.I."
-        />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/etFirstName"
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Last Name" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tvCreditCardInfoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText4"
+        android:layout_below="@+id/etLastName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
@@ -78,7 +76,7 @@
         android:layout_marginTop="31dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_below="@+id/textView18"
+        android:layout_below="@+id/tvCreditCardInfoText"
         android:layout_alignParentStart="true"
         android:hint="Credit Card Number"/>
 
@@ -86,41 +84,42 @@
         android:id="@+id/exp_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cc_number"
         android:layout_alignBottom="@+id/cc_number"
-        android:layout_toEndOf="@+id/editText6"
-        android:ems="10"
-        android:inputType="date"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@+id/cc_number"
         android:clickable="true"
-        android:longClickable="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:hint="MM/DD/YYY"/>
+        android:ems="10"
+        android:focusable="false" android:focusableInTouchMode="false"
+        android:hint="MM/DD/YYY" android:inputType="date"
+        android:longClickable="false"/>
 
     <EditText
         android:id="@+id/dob"
-        android:clickable="true"
-        android:longClickable="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText4"
-        android:layout_alignStart="@+id/editText3"
+        android:layout_alignBottom="@+id/etLastName"
+        android:layout_alignStart="@+id/etMiddleInitial"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:hint="@string/mm_dd_yy"
         android:inputType="date"
-        />
+        android:longClickable="false"/>
     <EditText
         android:id="@+id/editText10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cc_number"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cc_number"
         android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/tvCreditCardInfoText"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="CVV"
-        android:layout_below="@+id/cc_number"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/textView18" />
+        android:text="CVV"/>
 
     <Button
         android:id="@+id/button4"
