@@ -50,13 +50,12 @@
         android:id="@+id/etToDate"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="8dp"
         android:clickable="true"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false" android:hint="@string/mm_dd_yy"
         android:inputType="date" android:longClickable="false"
-        tools:layout_editor_absoluteX="33dp" tools:layout_editor_absoluteY="194dp"
         android:layout_below="@+id/actvTo" android:layout_alignStart="@+id/actvTo"/>
     <Button
         android:id="@+id/btnSearch"
@@ -67,8 +66,7 @@
         android:layout_alignParentRight="false" android:layout_alignParentTop="false"
         android:layout_alignWithParentIfMissing="false" android:layout_centerHorizontal="true"
         android:layout_marginBottom="150dp" android:elevation="0dp"
-        android:text="@string/search" tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="284dp"/>
+        android:text="@string/search"/>
     <AutoCompleteTextView
         android:id="@+id/actvFrom"
         android:layout_width="150dp"

@@ -23,6 +23,13 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="16dp"
                 android:text="ATL"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--->"
+                android:paddingRight="16dp"/>
+
             <TextView
                 android:id="@+id/des_loc"
                 android:layout_width="wrap_content"
@@ -41,6 +48,13 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="16dp"
                 android:text="DEN"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--->"
+                android:paddingRight="16dp"/>
+
             <TextView
                 android:id="@+id/ret_des_loc"
                 android:layout_width="wrap_content"
@@ -52,6 +66,18 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/depart_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:padding="8dp"
+        android:text="11:00PM  3:00PM"
+        android:textSize="13sp" />
+
+    <TextView
         android:id="@+id/flight_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,6 +87,6 @@
         android:textAlignment="textStart"
         android:padding="8dp"
         android:text="$900"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
 
 </LinearLayout>
