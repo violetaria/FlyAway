@@ -8,13 +8,6 @@ import android.widget.Button;
 import android.app.DatePickerDialog;
 import android.icu.text.SimpleDateFormat;
 import android.icu.util.Calendar;
-import android.os.Bundle;
-import android.app.DatePickerDialog;
-import android.icu.text.SimpleDateFormat;
-import android.icu.util.Calendar;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.DatePicker;
@@ -24,7 +17,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private static final String[] AIRPORTS = new String[] {
-            "ATL (Atlanta)", "FLL (Fort. Lauderdale)", "MCO (Orlando)", "MIA (Miami)", "LGA (LaGuardia)", "LAX (Los Angeles)"
+            "ATL (Atlanta)", "DEN (Denver)", "FLL (Fort. Lauderdale)", "MCO (Orlando)", "MIA (Miami)", "LGA (LaGuardia)", "LAX (Los Angeles)"
     };
     Calendar myCalendar = Calendar.getInstance();
     EditText etFromDate;
@@ -38,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        searchBtn = (Button) findViewById(R.id.button);
+        searchBtn = (Button) findViewById(R.id.btnSearch);
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         };
 
         toDate = new DatePickerDialog.OnDateSetListener() {
-
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 myCalendar.set(Calendar.YEAR, year);
