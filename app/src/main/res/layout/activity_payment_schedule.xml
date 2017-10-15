@@ -10,24 +10,26 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Payment Schedule"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:text="Payment Schedule"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jan 21"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="54dp"
+        android:layout_alignStart="@+id/textView9"
         android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/textView9" />
+        android:layout_marginTop="54dp"
+        android:text="Jan 21"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView6"
@@ -48,6 +50,7 @@
         android:layout_below="@+id/textView4"
         android:layout_marginTop="12dp"
         android:text="Feb 4"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -59,6 +62,7 @@
         android:layout_below="@+id/textView9"
         android:layout_marginTop="12dp"
         android:text="Feb 18"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -70,6 +74,7 @@
         android:layout_below="@+id/textView10"
         android:layout_marginTop="12dp"
         android:text="Mar 4"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -81,6 +86,7 @@
         android:layout_below="@+id/textView11"
         android:layout_marginTop="12dp"
         android:text="Mar 18"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -135,6 +141,7 @@
         android:layout_below="@+id/textView12"
         android:layout_marginTop="12dp"
         android:text="Mar 31"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -156,6 +163,7 @@
         android:layout_below="@+id/textView12"
         android:layout_marginTop="48dp"
         android:text="TOTAL PAYMENT:"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -166,7 +174,18 @@
         android:layout_alignBottom="@+id/textView25"
         android:layout_alignStart="@+id/textView24"
         android:text="$1200"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ps_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:text="OK"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView27"
+        android:layout_marginBottom="48dp" />
 
 </RelativeLayout>
