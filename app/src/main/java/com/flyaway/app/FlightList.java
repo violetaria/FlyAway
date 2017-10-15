@@ -6,21 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PaymentSummary extends AppCompatActivity {
+public class FlightList extends AppCompatActivity {
 
-    Button addCardBtn;
+    Button pickBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment_summary);
+        setContentView(R.layout.activity_flight_list);
 
-        addCardBtn = (Button)findViewById(R.id.button2);
-        addCardBtn.setOnClickListener(new View.OnClickListener() {
+        pickBtn = (Button)findViewById(R.id.button3);
+        pickBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PaymentSchedule.class);
+                Intent intent = new Intent(getApplicationContext(), PaymentSummary.class);
                 startActivity(intent);
             }
         });
+
     }
 }
