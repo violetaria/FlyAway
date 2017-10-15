@@ -41,16 +41,23 @@
         android:background="@android:color/holo_blue_dark"
         android:text="Time"
         android:textColor="@android:color/background_light"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp"
-        android:text="Next" />
+        android:layout_below="@+id/filter2"
+        android:layout_marginBottom="8dp">
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/flight_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layoutManager="LinearLayoutManager"
+            android:layout_alignStart="@+id/fliter1" />
 
+    </LinearLayout>
 </RelativeLayout>

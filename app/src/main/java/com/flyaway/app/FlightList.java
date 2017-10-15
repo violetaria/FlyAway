@@ -1,27 +1,41 @@
 package com.flyaway.app;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FlightList extends AppCompatActivity {
-
-    Button pickBtn;
+    
+    RecyclerView flightListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flight_list);
 
-        pickBtn = (Button)findViewById(R.id.button3);
-        pickBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PaymentSummary.class);
-                startActivity(intent);
-            }
-        });
+        flightListView = (RecyclerView) findViewById(R.id.flight_recycler_view);
+        flightListView.setAdapter(new FlightListAdapter(addFlights()));
 
+    }
+
+    private List<Flight> addFlights(){
+        Flight flight = new Flight();
+        flight.setFlightCompany("Delta");
+        flight.setFlightNumber("DL 1904");
+        flight.setDepartLoc("ATL");
+        flight.setDesLoc("DEN");
+        flight.setStartTime("11:00AM");
+        flight.setEndTime("3:00PM");
+        flight.setPrice("$900");
+
+        List<Flight> flightList = new ArrayList<>();
+        flightList.add(flight);
+        flightList.add(flight);
+        flightList.add(flight);
+        flightList.add(flight);
+
+        return flightList;
     }
 }
