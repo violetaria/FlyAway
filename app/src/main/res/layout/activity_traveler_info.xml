@@ -16,7 +16,8 @@
         android:text="First Name"
         android:layout_below="@+id/tvTravelInfoText"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp" />
+        android:layout_marginTop="19dp"
+        android:hint="First Name"/>
 
     <TextView
         android:id="@+id/tvTravelInfoText"
@@ -35,7 +36,7 @@
         android:layout_alignTop="@+id/etFirstName"
         android:layout_toRightOf="@+id/etFirstName"
         android:ems="10" android:inputType="textPersonName"
-        android:text="M.I."/>
+        android:hint="M.I."/>
 
     <EditText
         android:id="@+id/etLastName"
@@ -46,7 +47,8 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Last Name" />
+        android:hint="Last Name"
+        />
 
     <TextView
         android:id="@+id/tvCreditCardInfoText"
@@ -65,9 +67,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         android:layout_above="@+id/exp_date"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:hint="Name"/>
 
     <EditText
         android:id="@+id/cc_number"
@@ -91,8 +93,9 @@
         android:clickable="true"
         android:ems="10"
         android:focusable="false" android:focusableInTouchMode="false"
-        android:hint="MM/DD/YYY" android:inputType="date"
-        android:longClickable="false"/>
+        android:inputType="date"
+        android:longClickable="false"
+        android:hint="@string/mm_dd_yy"/>
 
     <EditText
         android:id="@+id/dob"
@@ -119,7 +122,7 @@
         android:layout_toStartOf="@+id/tvCreditCardInfoText"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="CVV"/>
+        android:hint="CVV"/>
 
     <Button
         android:id="@+id/button4"

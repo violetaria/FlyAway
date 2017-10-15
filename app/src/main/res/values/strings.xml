@@ -8,4 +8,5 @@
     <string name="pay_today">You Pay Today</string>
     <string name="round_trip">Round Trip</string>
     <string name="one_way">One Way</string>
+    <string name="ps_underline"><u>View Payment Schedule</u></string>
 </resources>
