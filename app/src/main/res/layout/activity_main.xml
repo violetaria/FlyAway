@@ -47,9 +47,16 @@
         android:id="@+id/etToDate"
         android:layout_width="150dp"
         android:layout_height="43dp"
-        android:ems="10" android:hint="@string/mm_dd_yy"
-        android:inputType="date" tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="194dp" android:layout_below="@+id/actvFrom"
+        android:ems="10"
+        android:hint="@string/mm_dd_yy"
+        android:inputType="date"
+        android:clickable="true"
+        android:longClickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="194dp"
+        android:layout_below="@+id/actvFrom"
         android:layout_alignEnd="@+id/actvTo"/>
     <Button
         android:id="@+id/button"
@@ -66,8 +73,9 @@
         android:id="@+id/actvFrom"
         android:layout_width="115dp"
         android:layout_height="46dp"
-        tools:layout_editor_absoluteX="233dp" tools:layout_editor_absoluteY="134dp"
-        android:layout_below="@+id/tvFrom" android:layout_toStartOf="@+id/button"/>
+        android:layout_below="@+id/tvFrom" android:layout_toStartOf="@+id/button"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="134dp"/>
     <AutoCompleteTextView
         android:id="@+id/actvTo"
         android:layout_width="115dp"
@@ -76,10 +84,17 @@
         android:layout_below="@+id/tvTo" android:layout_toEndOf="@+id/button"/>
     <EditText
         android:id="@+id/etFromDate"
+        android:clickable="true"
+        android:longClickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/etToDate" android:layout_alignStart="@+id/actvFrom"
+        android:layout_alignBottom="@+id/etToDate"
+        android:layout_alignStart="@+id/actvFrom"
         android:ems="10"
-        android:hint="@string/mm_dd_yy" android:inputType="date"/>
+        android:hint="@string/mm_dd_yy"
+        android:inputType="date"
+    />
 
 </RelativeLayout>
