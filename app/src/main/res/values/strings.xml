@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Fly Away</string>
     <string name="mm_dd_yy">MM/DD/YY</string>
+    <string name="mm_yy">MM/YY</string>
     <string name="to">To</string>
     <string name="from">From</string>
     <string name="search">Search</string>
