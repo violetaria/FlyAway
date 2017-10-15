@@ -16,14 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PaymentSchedule">
-        </activity>
-        <activity android:name=".FlightList"></activity>
-        <activity android:name=".PaymentSummary"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".PaymentSchedule"></activity>
+        <activity android:name=".FlightList" />
+        <activity android:name=".PaymentSummary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TravelerInfo"></activity>
     </application>
 
 </manifest>
