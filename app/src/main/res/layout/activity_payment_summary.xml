@@ -98,15 +98,15 @@
         android:id="@+id/seekBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contextClickable="true"
-        android:layout_below="@+id/textView16"
         android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/textView16"
         android:layout_toEndOf="@+id/textView5"
-        android:minHeight="5dp"
-        android:maxHeight="10dp"/>
+        android:contextClickable="true"
+        android:max="500"
+        android:maxHeight="10dp" android:minHeight="5dp"/>
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tvDueToday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/seekBar"
@@ -139,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button2"
-        android:layout_alignEnd="@+id/textView12"
+        android:layout_alignEnd="@+id/tvDueToday"
         android:layout_marginBottom="13dp"
         android:text="View Payment Schedule"
         android:textColorLink="@android:color/darker_gray"
