@@ -125,12 +125,11 @@
         android:hint="CVV"/>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnBuyTicket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText10"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:text="Buy Ticket" />
+        android:layout_centerHorizontal="true" android:layout_marginTop="25dp"
+        android:text="Buy Ticket"/>
 
 </RelativeLayout>

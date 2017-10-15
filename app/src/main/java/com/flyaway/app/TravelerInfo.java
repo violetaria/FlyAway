@@ -1,30 +1,39 @@
 package com.flyaway.app;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
 import android.icu.util.Calendar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
 import java.util.Locale;
-
-import static com.flyaway.app.R.id.etFromDate;
-import static com.flyaway.app.R.id.etToDate;
 
 public class TravelerInfo extends AppCompatActivity {
 
     DatePickerDialog.OnDateSetListener dobDP;
     DatePickerDialog.OnDateSetListener expDateDP;
     Calendar myCalendar = Calendar.getInstance();
+    Button btnBuyTicket;
 
     EditText dob, expDate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traveler_info);
+
+        btnBuyTicket = (Button) findViewById(R.id.btnBuyTicket);
+        btnBuyTicket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Confirmation.class);
+                startActivity(intent);
+            }
+        });
 
         dob = (EditText) findViewById(R.id.dob);
         expDate = (EditText) findViewById(R.id.exp_date);
