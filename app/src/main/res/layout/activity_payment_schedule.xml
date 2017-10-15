@@ -7,7 +7,15 @@
     tools:context="com.flyaway.app.PaymentSchedule">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvPayTodayValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvPayment1"
+        android:layout_alignEnd="@+id/tvPaymentSchedule"
+        android:layout_alignTop="@+id/tvPayToday" android:text="$500"
+        android:textSize="18sp" android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvPaymentSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -20,34 +28,34 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvDate1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView9"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="54dp"
         android:text="Jan 21"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/tvPaymentSchedule"
+        android:layout_alignStart="@+id/tvDate2"/>
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvPayment1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignBaseline="@+id/tvDate1"
+        android:layout_alignBottom="@+id/tvDate1"
+        android:layout_alignEnd="@+id/tvPaymentSchedule"
         android:text="$200"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tvDate2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/tvDate3"
+        android:layout_below="@+id/tvDate1"
         android:layout_marginTop="12dp"
         android:text="Feb 4"
         android:textColor="@android:color/black"
@@ -55,11 +63,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/tvDate3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/tvPaymentSchedule"
+        android:layout_below="@+id/tvDate2"
         android:layout_marginTop="12dp"
         android:text="Feb 18"
         android:textColor="@android:color/black"
@@ -67,11 +75,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/tvDate4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView9"
-        android:layout_below="@+id/textView10"
+        android:layout_alignEnd="@+id/tvDate2"
+        android:layout_below="@+id/tvDate3"
         android:layout_marginTop="12dp"
         android:text="Mar 4"
         android:textColor="@android:color/black"
@@ -79,11 +87,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tvDate5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView11"
-        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/tvDate4"
+        android:layout_below="@+id/tvDate4"
         android:layout_marginTop="12dp"
         android:text="Mar 18"
         android:textColor="@android:color/black"
@@ -91,54 +99,54 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tvPayment2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_alignTop="@+id/textView9"
+        android:layout_alignStart="@+id/tvPayment1"
+        android:layout_alignTop="@+id/tvDate2"
         android:text="$200"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tvPayment3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView10"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_alignStart="@+id/textView13"
+        android:layout_alignBaseline="@+id/tvDate3"
+        android:layout_alignBottom="@+id/tvDate3"
+        android:layout_alignStart="@+id/tvPayment2"
         android:text="$200"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tvPayment4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView11"
-        android:layout_alignBottom="@+id/textView11"
-        android:layout_alignEnd="@+id/textView15"
+        android:layout_alignBaseline="@+id/tvDate4"
+        android:layout_alignBottom="@+id/tvDate4"
+        android:layout_alignEnd="@+id/tvPayment3"
         android:text="$200"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tvPayment5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView12"
-        android:layout_alignBottom="@+id/textView12"
-        android:layout_alignStart="@+id/textView16"
+        android:layout_alignBaseline="@+id/tvDate5"
+        android:layout_alignBottom="@+id/tvDate5"
+        android:layout_alignStart="@+id/tvPayment4"
         android:text="$200"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/tvDate6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView12"
-        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/tvDate5"
+        android:layout_below="@+id/tvDate5"
         android:layout_marginTop="12dp"
         android:text="Mar 31"
         android:textColor="@android:color/black"
@@ -146,46 +154,52 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/tvPayment6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView22"
-        android:layout_alignEnd="@+id/textView17"
+        android:layout_alignBottom="@+id/tvDate6"
+        android:layout_alignEnd="@+id/tvPayment5"
         android:text="$200"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/tvTotalPayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/tvDate3"
+        android:layout_below="@+id/tvDate5"
         android:layout_marginTop="48dp"
         android:text="TOTAL PAYMENT:"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/tvTotalPaymentValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView25"
-        android:layout_alignStart="@+id/textView24"
-        android:text="$1200"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:layout_alignStart="@+id/tvPayment6"
+        android:layout_alignTop="@+id/tvTotalPayment"
+        android:layout_below="@+id/tvPayment6"
+        android:text="$1200" android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvPayToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/tvPayment1"
+        android:layout_alignLeft="@+id/tvPaymentSchedule" android:layout_alignStart="@+id/tvDate1"
+        android:layout_marginBottom="10dp"
+        android:text="@string/pay_today" android:textSize="18sp" android:textStyle="bold"/>
 
     <Button
         android:id="@+id/ps_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
         android:layout_marginEnd="49dp"
         android:text="OK"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/textView27"
-        android:layout_marginBottom="48dp" />
+        android:textAlignment="center"/>
 
 </RelativeLayout>
