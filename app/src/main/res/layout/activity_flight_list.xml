@@ -11,13 +11,14 @@
         android:id="@+id/filter2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/fliter1"
-        android:layout_alignBottom="@+id/fliter1"
+        android:layout_alignBaseline="@+id/filter1"
+        android:layout_alignBottom="@+id/filter1"
         android:layout_marginStart="31dp"
-        android:layout_toEndOf="@+id/fliter1"
+        android:layout_toEndOf="@+id/filter1"
         android:background="@android:color/holo_blue_dark"
         android:text="Delta"
         android:textColor="@android:color/background_light"
+        android:padding="2dp"
         android:textStyle="bold" />
 
     <EditText
@@ -26,12 +27,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Denver"
         android:textSize="36sp"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:hint="Denver"/>
 
     <TextView
-        android:id="@+id/fliter1"
+        android:id="@+id/filter1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -40,6 +41,7 @@
         android:layout_marginTop="29dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Time"
+        android:padding="2dp"
         android:textColor="@android:color/background_light"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>

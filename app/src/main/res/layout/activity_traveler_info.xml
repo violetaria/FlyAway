@@ -13,10 +13,10 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="First Name"
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp" />
+        android:layout_marginTop="19dp"
+        android:hint="First Name"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -36,7 +36,7 @@
         android:layout_marginStart="195dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="M.I."
+        android:hint="M.I."
         />
 
     <EditText
@@ -48,7 +48,8 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Last Name" />
+        android:hint="Last Name"
+        />
 
     <TextView
         android:id="@+id/textView18"
@@ -67,9 +68,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         android:layout_above="@+id/exp_date"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:hint="Name"/>
 
     <EditText
         android:id="@+id/cc_number"
@@ -94,7 +95,7 @@
         android:longClickable="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:hint="MM/DD/YYY"/>
+        android:hint="@string/mm_dd_yy"/>
 
     <EditText
         android:id="@+id/dob"
@@ -117,10 +118,10 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="CVV"
         android:layout_below="@+id/cc_number"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/textView18" />
+        android:layout_toStartOf="@+id/textView18"
+        android:hint="CVV"/>
 
     <Button
         android:id="@+id/button4"

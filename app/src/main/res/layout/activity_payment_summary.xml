@@ -141,8 +141,8 @@
         android:layout_above="@+id/button2"
         android:layout_alignEnd="@+id/tvDate5"
         android:layout_marginBottom="13dp"
-        android:text="View Payment Schedule"
-        android:textColorLink="@android:color/darker_gray"
+        android:text="@string/ps_underline"
+        android:textColor="#0645AD"
         android:textSize="16sp" />
 
     <TextView
