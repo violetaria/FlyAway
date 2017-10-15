@@ -2,6 +2,8 @@ package com.flyaway.app;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -16,11 +18,21 @@ public class PaymentSchedule extends AppCompatActivity {
     TextView tvPayment5;
     TextView tvPayment6;
     TextView tvTotalPaymentValue;
+    Button btnOk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_schedule);
+
+        btnOk = (Button) findViewById(R.id.ps_ok);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
         Bundle bundle = getIntent().getExtras();
         Double weeklyPayment = bundle.getDouble(PaymentSummary.WEEKLY_PAYMEMNT);
         Double todaysPayment = bundle.getDouble(PaymentSummary.TODAYS_PAYMENT);

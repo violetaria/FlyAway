@@ -20,7 +20,13 @@
         <activity android:name=".FlightList" />
         <activity android:name=".PaymentSummary"></activity>
         <activity android:name=".TravelerInfo" />
-        <activity android:name=".Confirmation"></activity>
+        <activity android:name=".Confirmation">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
