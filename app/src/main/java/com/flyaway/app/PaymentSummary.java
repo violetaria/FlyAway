@@ -18,6 +18,7 @@ public class PaymentSummary extends AppCompatActivity {
     SeekBar seekBar;
     TextView tvDueToday;
     TextView tvWeeklyPayments;
+    TextView tvViewPaymentSchedule;
     Double totalPayment;
 
     @Override
@@ -28,11 +29,20 @@ public class PaymentSummary extends AppCompatActivity {
         // TODO - get total payment from calling activity
         totalPayment = 1200.00;
 
+        tvViewPaymentSchedule = (TextView)findViewById(R.id.tvViewPaymentSchedule);
+        tvViewPaymentSchedule.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PaymentSchedule.class);
+                startActivity(intent);
+            }
+        });
+
         addCardBtn = (Button)findViewById(R.id.button2);
         addCardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PaymentSchedule.class);
+                Intent intent = new Intent(getApplicationContext(), TravelerInfo.class);
                 startActivity(intent);
             }
         });

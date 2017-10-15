@@ -95,7 +95,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tvViewPaymentSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView10"
@@ -111,7 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView11"
         android:layout_alignBottom="@+id/textView11"
-        android:layout_alignEnd="@+id/textView15"
+        android:layout_alignEnd="@+id/tvViewPaymentSchedule"
         android:text="$200"
         android:textSize="18sp"
         android:textStyle="bold" />
