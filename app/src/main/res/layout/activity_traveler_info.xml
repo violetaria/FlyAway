@@ -10,14 +10,13 @@
         android:id="@+id/etFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvTravelInfoText"
+        android:layout_marginTop="19dp"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="First Name"
-        android:layout_below="@+id/tvTravelInfoText"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp"
-        android:hint="First Name"/>
+        android:hint="First Name"
+        android:inputType="textPersonName"/>
 
     <TextView
         android:id="@+id/tvTravelInfoText"
@@ -93,9 +92,9 @@
         android:clickable="true"
         android:ems="10"
         android:focusable="false" android:focusableInTouchMode="false"
+        android:hint="@string/mm_yy"
         android:inputType="date"
-        android:longClickable="false"
-        android:hint="@string/mm_dd_yy"/>
+        android:longClickable="false"/>
 
     <EditText
         android:id="@+id/dob"
