@@ -6,13 +6,13 @@ package com.flyaway.app;
 
 public class Flight {
 
-    String flightNumber;
-    String startTime;
-    String endTime;
-    String desLoc;
-    String departLoc;
-    String price;
-    String flightCompany;
+    private String flightNumber;
+    private String startTime;
+    private String endTime;
+    private String desLoc;
+    private String departLoc;
+    private String price;
+    private String flightCompany;
 
     public String getFlightNumber() {
         return flightNumber;
