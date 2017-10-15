@@ -23,8 +23,8 @@
         android:layout_above="@+id/textView6"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="80dp"
-        android:text="$1,250.00"
-        android:textSize="18sp" />
+        android:text="$1,200.00"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -81,8 +81,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView7"
         android:layout_alignStart="@+id/textView10"
-        android:text="$1,450.00"
-        android:textSize="18sp" />
+        android:text="$1,400.00"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/textView11"
@@ -116,7 +116,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/tvWeeklyPayments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$250.00 every other week"
@@ -153,7 +153,7 @@
         android:textSize="10sp"
         android:layout_alignBaseline="@+id/textView17"
         android:layout_alignBottom="@+id/textView17"
-        android:layout_alignEnd="@+id/textView14" />
+        android:layout_alignEnd="@+id/tvWeeklyPayments" />
 
 
 </RelativeLayout>
