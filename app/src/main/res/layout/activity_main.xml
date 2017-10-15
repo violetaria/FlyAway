@@ -9,92 +9,99 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:layout_marginRight="40dp"
-        android:id="@+id/tvTitle"
-        android:layout_marginTop="23dp" android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchTripType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="One Way"
-        tools:layout_editor_absoluteX="260dp" tools:layout_editor_absoluteY="29dp"
-        tools:text="Round Trip"
-        android:layout_below="@+id/tvTitle" android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="26dp"
+        android:checked="true" android:text="@string/round_trip"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="29dp" tools:text="@string/round_trip"/>
     <TextView
         android:id="@+id/tvFrom"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:text="@string/from"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/switchTripType"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/from"
         android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="94dp"
-        android:layout_marginTop="21dp" android:layout_below="@+id/switch1"
-        android:layout_toStartOf="@+id/tvTitle" android:layout_marginEnd="34dp"/>
+        android:textSize="24sp" android:textStyle="bold"
+        tools:layout_editor_absoluteX="260dp" tools:layout_editor_absoluteY="94dp"/>
     <TextView
         android:id="@+id/tvTo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:text="@string/to"
+        android:layout_height="wrap_content" android:layout_above="@+id/actvFrom"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvFrom"
+        android:layout_marginRight="180dp"
+        android:text="@string/to"
         android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="94dp"
-        android:layout_above="@+id/actvFrom" android:layout_toStartOf="@+id/switch1"/>
+        android:textSize="24sp"
+        android:textStyle="bold" tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="94dp"/>
     <EditText
         android:id="@+id/etToDate"
         android:layout_width="150dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="@string/mm_dd_yy"
-        android:inputType="date"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
         android:clickable="true"
-        android:longClickable="false"
+        android:ems="10"
         android:focusable="false"
-        android:focusableInTouchMode="false"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="194dp"
-        android:layout_below="@+id/actvFrom"
-        android:layout_alignEnd="@+id/actvTo"/>
+        android:focusableInTouchMode="false" android:hint="@string/mm_dd_yy"
+        android:inputType="date" android:longClickable="false"
+        tools:layout_editor_absoluteX="33dp" tools:layout_editor_absoluteY="194dp"
+        android:layout_below="@+id/actvTo" android:layout_alignStart="@+id/actvTo"/>
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="false" android:layout_alignParentTop="false"
         android:layout_alignWithParentIfMissing="false" android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp" android:elevation="0dp"
+        android:layout_marginBottom="150dp" android:elevation="0dp"
         android:text="@string/search" tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="284dp"/>
     <AutoCompleteTextView
         android:id="@+id/actvFrom"
-        android:layout_width="115dp"
-        android:layout_height="46dp"
-        android:layout_below="@+id/tvFrom" android:layout_toStartOf="@+id/button"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="134dp"/>
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="134dp"
+        android:layout_below="@+id/tvFrom" android:layout_alignStart="@+id/tvFrom"/>
     <AutoCompleteTextView
         android:id="@+id/actvTo"
-        android:layout_width="115dp"
-        android:layout_height="46dp"
-        tools:layout_editor_absoluteX="33dp" tools:layout_editor_absoluteY="134dp"
-        android:layout_below="@+id/tvTo" android:layout_toEndOf="@+id/button"/>
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true" android:layout_alignStart="@+id/tvTo"
+        android:layout_below="@+id/tvTo" android:layout_marginRight="20dp"
+        android:textSize="14sp" tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="134dp"/>
     <EditText
         android:id="@+id/etFromDate"
-        android:clickable="true"
-        android:longClickable="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/etToDate"
+        android:layout_alignLeft="@+id/tvFrom"
         android:layout_alignStart="@+id/actvFrom"
+        android:layout_below="@+id/actvFrom"
+        android:clickable="true"
         android:ems="10"
-        android:hint="@string/mm_dd_yy"
-        android:inputType="date"
-    />
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/mm_dd_yy" android:inputType="date"
+        android:longClickable="false"/>
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTitle" android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" app:srcCompat="@drawable/flyaway_logo"/>
 
 </RelativeLayout>
